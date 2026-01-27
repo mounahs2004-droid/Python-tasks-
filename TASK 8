@@ -1,0 +1,66 @@
+# TASK 8: File Handling (TXT & CSV)
+
+## Objective
+To understand file handling in Python using text files and CSV files.
+
+## Tools Used
+- Python
+- VS Code
+
+## Files Included
+- file_handling_demo.py
+- users.txt
+- students.csv
+
+## Concepts Covered
+- Writing, reading, and appending text files
+- Exception handling in file operations
+- Creating and reading CSV files
+- Proper file closing using context managers
+
+## Final Outcome
+This task demonstrates practical knowledge of file systems and data storage.
+
+import csv
+
+# ---------- TXT FILE HANDLING ----------
+
+try:
+    # 1 & 2. Create and write data to text file
+    with open("users.txt", "w") as file:
+        file.write("Name: Mouna\n")
+        file.write("Course: Python\n")
+        file.write("Status: Intern\n")
+
+    # 3. Read file contents
+    print("Reading users.txt:")
+    with open("users.txt", "r") as file:
+        print(file.read())
+
+    # 4. Append data to file
+    with open("users.txt", "a") as file:
+        file.write("Location: India\n")
+
+except IOError as e:
+    print("File error occurred:", e)
+
+# ---------- CSV FILE HANDLING ----------
+
+try:
+    # 6 & 7. Create CSV file and write multiple rows
+    with open("students.csv", "w", newline="") as file:
+        writer = csv.writer(file)
+        writer.writerow(["ID", "Name", "Marks"])
+        writer.writerow([101, "Asha", 85])
+        writer.writerow([102, "Ravi", 90])
+        writer.writerow([103, "Mouna", 95])
+
+    # 8. Read CSV data
+    print("\nReading students.csv:")
+    with open("students.csv", "r") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            print(row)
+
+except IOError as e:
+    print("CSV file error occurred:", e)
