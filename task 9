@@ -1,0 +1,33 @@
+# TASK 9 – Exception Handling & Logging in Python
+
+## Objective
+To understand and implement exception handling and logging in Python for building production-ready applications.
+
+## Tools Used
+- Python
+- logging module
+
+##  Files
+- error_handling.py → main script
+- app.log → log file storing error details
+
+## Concepts Covered
+- try-except blocks
+- Multiple exception handling
+- else and finally usage
+- Custom exceptions
+- Logging errors to a file
+- Debugging using logs
+
+##  How It Works
+- Handles runtime errors like ZeroDivisionError and TypeError
+- Uses a custom exception for negative numbers
+- Logs all errors with timestamps into `app.log`
+
+## Sample Errors Simulated
+- Division by zero
+- Invalid data type
+- Negative input values
+
+## Outcome
+This task helps build robust, maintainable, and production-ready Python code.
