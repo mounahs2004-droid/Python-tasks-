@@ -1,0 +1,33 @@
+Objective
+
+To design and implement a Python application using Object-Oriented Programming principles in order to model real-world banking operations with a modular and maintainable code structure.
+
+Tools Used
+
+Python
+
+VS Code
+
+Files Included
+
+bank_account.py – Python script implementing OOP-based bank account functionality
+
+Concepts Covered
+
+Class and object creation
+
+Constructors and instance attributes
+
+Encapsulation using access modifiers and getter methods
+
+Inheritance to extend base class functionality
+
+Method overriding to demonstrate polymorphism
+
+Creation and interaction of multiple objects
+
+Simulation of real-world banking operations such as deposit, withdrawal, and interest calculation
+
+Final Outcome
+
+This task demonstrates a strong understanding of Object-Oriented Programming concepts in Python, emphasizing software design principles, code reusability, and scalability.
