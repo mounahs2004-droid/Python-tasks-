@@ -1,0 +1,25 @@
+# Regular Expressions for Data Validation
+
+## Description
+This project demonstrates how to use Python regular expressions to validate
+email addresses, Indian mobile numbers, and strong passwords.
+
+## Tools Used
+- Python
+- re module
+- VS Code
+
+## Features
+- Email validation
+- Indian mobile number validation
+- Strong password validation
+- User input handling
+- Edge case testing
+
+## How to Run
+1. Clone the repository
+2. Run `python regex_validation.py`
+3. Enter inputs when prompted
+
+## Outcome
+This task helps understand real-world input validation using regex.
