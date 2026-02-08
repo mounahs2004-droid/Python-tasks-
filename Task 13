@@ -1,0 +1,30 @@
+# Web Scraping Using BeautifulSoup
+
+## Description
+This project demonstrates how to scrape data from a website using Python,
+BeautifulSoup, and requests, and store the extracted data in a CSV file.
+
+## Website Used
+https://quotes.toscrape.com (Scraping practice site)
+
+## Tools
+- Python
+- BeautifulSoup
+- requests
+- CSV
+
+## Features
+- Fetch HTML content
+- Parse and extract quotes
+- Extract author and tags
+- Handle missing elements
+- Save data to CSV
+
+## How to Run
+1. Install dependencies:
+   pip install requests beautifulsoup4
+2. Run the script:
+   python web_scraper.py
+
+## Outcome
+Intern can collect data from web sources using BeautifulSoup.
