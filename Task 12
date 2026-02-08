@@ -1,0 +1,30 @@
+# Consuming Public APIs Using Python
+
+## Description
+This project demonstrates how to consume a public REST API using Python,
+parse JSON responses, handle errors, and save data locally.
+
+## API Used
+Random User API (https://randomuser.me)
+
+## Tools
+- Python
+- requests library
+- VS Code
+
+## Features
+- GET request handling
+- Status code validation
+- JSON parsing
+- Nested data extraction
+- Error handling
+- Local file storage
+
+## How to Run
+1. Install dependencies:
+   pip install requests
+2. Run the script:
+   python api_data_fetch.py
+
+## Outcome
+Intern understands API communication and JSON parsing.
