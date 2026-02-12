@@ -1,0 +1,25 @@
+# Database Operations Using SQLite
+
+## Objective
+This project demonstrates CRUD operations using Python and SQLite.
+
+## Tools Used
+- Python
+- sqlite3 module
+- DB Browser for SQLite
+
+## Features
+- Create database and tables
+- Insert user records
+- Fetch and display records
+- Update records
+- Delete records
+- Parameterized queries to prevent SQL injection
+
+## How to Run
+1. Clone repository
+2. Run:
+   python database_app.py
+
+## Output
+SQLite database file (users.db) is generated automatically.
