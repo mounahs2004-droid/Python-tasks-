@@ -1,0 +1,26 @@
+# Data Analysis Using Pandas
+
+## Objective
+Analyze sales dataset using Pandas.
+
+## Tools
+- Python
+- Pandas
+- VS Code
+
+## Tasks Performed
+- Loaded CSV dataset
+- Explored data using head(), info(), describe()
+- Handled missing values
+- Added calculated column (TotalSales)
+- Filtered and sorted data
+- Grouped data by Region
+- Exported cleaned dataset
+
+## Output
+cleaned_sales_data.csv generated successfully.
+
+## Insights
+- Laptop generated highest revenue
+- Missing values replaced using mean
+- Regional sales comparison performed
