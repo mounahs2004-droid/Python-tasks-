@@ -1,0 +1,112 @@
+# TASK 16 – Numerical Computing Using NumPy
+
+## Objective
+Learn numerical computing using NumPy library.
+
+## Tools Used
+- Python
+- NumPy
+- VS Code
+
+## Concepts Implemented
+1. Created arrays (1D, 2D, zeros, ones, range)
+2. Mathematical operations on arrays
+3. Broadcasting concept
+4. Statistical analysis functions
+5. NumPy vs Python list performance comparison
+6. Random data generation
+7. Vectorization optimization
+8. Array structure visualization
+
+## Output
+The script demonstrates the power and speed of NumPy for numerical computations.
+
+## Conclusion
+NumPy makes large mathematical computations faster, easier, and more efficient compared to Python lists.
+
+# TASK 16: Numerical Computing Using NumPy
+import numpy as np
+import time
+
+print("===== NUMPY NUMERICAL COMPUTING DEMO =====\n")
+
+# 1️⃣ Create arrays of different dimensions
+print("1) Creating Arrays")
+arr1 = np.array([1,2,3,4,5])
+arr2 = np.array([[1,2,3],[4,5,6]])
+arr3 = np.zeros((3,3))
+arr4 = np.ones((2,2))
+arr5 = np.arange(0,20,2)
+
+print("1D Array:", arr1)
+print("2D Array:\n", arr2)
+print("Zero Array:\n", arr3)
+print("Ones Array:\n", arr4)
+print("Range Array:", arr5)
+
+# 2️⃣ Mathematical operations
+print("\n2) Mathematical Operations")
+a = np.array([10,20,30])
+b = np.array([1,2,3])
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+print("Square:", np.square(a))
+print("Square Root:", np.sqrt(a))
+
+# 3️⃣ Broadcasting
+print("\n3) Broadcasting Example")
+matrix = np.array([[1,2,3],[4,5,6]])
+scalar = 10
+print("Matrix + Scalar:\n", matrix + scalar)
+
+# 4️⃣ Statistical functions
+print("\n4) Statistics")
+data = np.array([10,20,30,40,50,60])
+print("Mean:", np.mean(data))
+print("Median:", np.median(data))
+print("Std Dev:", np.std(data))
+print("Max:", np.max(data))
+print("Min:", np.min(data))
+print("Sum:", np.sum(data))
+
+# 5️⃣ NumPy vs Python List Speed Test
+print("\n5) NumPy vs List Speed Test")
+
+size = 1000000
+list1 = list(range(size))
+list2 = list(range(size))
+
+start = time.time()
+result = [x+y for x,y in zip(list1,list2)]
+print("Python list time:", time.time() - start)
+
+arr1 = np.arange(size)
+arr2 = np.arange(size)
+
+start = time.time()
+result = arr1 + arr2
+print("NumPy time:", time.time() - start)
+
+# 6️⃣ Random data generation
+print("\n6) Random Data")
+print("Random integers:\n", np.random.randint(1,100,(3,3)))
+print("Random floats:\n", np.random.rand(2,2))
+print("Normal distribution:\n", np.random.randn(5))
+
+# 7️⃣ Optimize calculations (vectorization)
+print("\n7) Vectorization Example")
+numbers = np.arange(1,11)
+print("Squares using vectorization:", numbers**2)
+
+# 8️⃣ Visualizing array structure
+print("\n8) Array Properties")
+sample = np.array([[1,2,3],[4,5,6]])
+print("Shape:", sample.shape)
+print("Dimensions:", sample.ndim)
+print("Data type:", sample.dtype)
+print("Size:", sample.size)
+
+print("\n===== TASK COMPLETED SUCCESSFULLY =====")
